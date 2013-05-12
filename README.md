@@ -1,6 +1,6 @@
 Lucky Charms Library
 ====================
-[![NPM version](https://badge.fury.io/js/luckycharms-client.png)](https://npmjs.org/package/luckycharms-library) [![Build Status](https://travis-ci.org/bigbam505/luckycharms-library.png?branch=master)](https://travis-ci.org/bigbam505/luckycharms-library)
+[![NPM version](https://badge.fury.io/js/luckycharms-library.png)](https://npmjs.org/package/luckycharms-library) [![Build Status](https://travis-ci.org/bigbam505/luckycharms-library.png?branch=master)](https://travis-ci.org/bigbam505/luckycharms-library)
 
 ### About
 
