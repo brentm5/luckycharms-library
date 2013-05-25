@@ -1,9 +1,9 @@
 {
   "name": "luckycharms-library",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A module to interface with luckycharms api",
   "main": "./lib/luckycharms-library.js",
-  "directories" : {
+  "directories": {
     "lib": "lib",
     "example": "example",
     "test": "test"
