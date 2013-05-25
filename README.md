@@ -12,13 +12,22 @@ get external value.
 ### Lucky Charms Library Usage
 
 ```javascript
-  //To come later
+  var Client = require('luckycharms-library');
+
+  Client.ListUnits(function(data) {
+    console.log(data);
+  });
+
+  Client.UpdateUnitUrl('unit-1', 'http://www.google.com/', function(data) {
+    console.log(data);
+  });
 ```
 
 ### Enviromental Variables
 
 ```javascript
-  //To come later
+  LUCKYCHARMS_URL - URL of the Lucky Charms server with trailing '/'
+  LUCKYCHARMS_API_KEY - The API Key in order to access the server
 ```
 
 ### Issues
