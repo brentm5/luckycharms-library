@@ -12,6 +12,11 @@ Client.ListUnits(function(data){
   console.log(data);
 });
 
+// Get all the bookmarks
+Client.ListBookmarks(function(data){
+  console.log(data);
+});
+
 // Update a units current url
 Client.UpdateUnitUrl('unit-1', 'http://google.com', function(data){
   console.log(data);
