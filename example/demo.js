@@ -17,3 +17,7 @@ Client.UpdateUnitUrl('unit-1', 'http://google.com', function(data){
   console.log(data);
 });
 
+// Add a new bookmark
+Client.CreateBookmark('new-bookmark', 'http://google.com', function(data){
+  console.log(data);
+});
