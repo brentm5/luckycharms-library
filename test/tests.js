@@ -36,6 +36,20 @@ describe('luckycharms-library', function(){
     })
   })
 
+  describe('#ListBookmarks', function() {
+    nock('http://luckycharms.dev')
+    .get('/admin/bookmarks.json?api_key=apikey')
+    .reply(200, [{id: 2}, {id: 1}]);
+
+    it('returns a list of bookmarks', function(done){
+      Library.ListBookmarks(function(data) {
+        data.should.includeEql({id: 2});
+        data.should.includeEql({id: 1});
+        done();
+      });
+    })
+  })
+
   describe('#CreateBookmark', function() {
     nock('http://luckycharms.dev')
     .post('/admin/bookmarks.json?api_key=apikey', 'name=bookmark-1&url=http%3A%2F%2Fwww.google.com%2F')
