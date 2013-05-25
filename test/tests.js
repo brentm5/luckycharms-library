@@ -36,5 +36,18 @@ describe('luckycharms-library', function(){
     })
   })
 
+  describe('#UpdateUnitUrl', function() {
+    nock('http://luckycharms.dev')
+    .post('/admin/units/unit-1/current_url.json?api_key=apikey', 'url=http%3A%2F%2Fwww.google.com%2F')
+    .reply(200, {id: 1, current_url: "http://www.google.com/"});
+
+    it('returns the updated unit', function(done){
+      Library.UpdateUnitUrl('unit-1', 'http://www.google.com/', function(data) {
+        data.should.include({id: 1, current_url: 'http://www.google.com/'});
+        done();
+      });
+    })
+  })
+
 })
 
